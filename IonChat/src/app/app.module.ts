@@ -9,6 +9,9 @@ import { ChatComponent } from './chat/chat.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { FriendsComponent } from './friends/friends.component';
+import { NavbarComponent } from './login/navbar/navbar.component';
+import { BodyComponent } from './login/body/body.component';
+import { FooterComponent } from './login/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { FriendsComponent } from './friends/friends.component';
     ChatComponent,
     HomeComponent,
     ContactComponent,
-    FriendsComponent
+    FriendsComponent,
+    NavbarComponent,
+    BodyComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
