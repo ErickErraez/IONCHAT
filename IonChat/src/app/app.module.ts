@@ -9,6 +9,7 @@ import { ChatComponent } from './chat/chat.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { FriendsComponent } from './friends/friends.component';
+import { MuroComponent } from './muro/muro.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FriendsComponent } from './friends/friends.component';
     ChatComponent,
     HomeComponent,
     ContactComponent,
-    FriendsComponent
+    FriendsComponent,
+    MuroComponent
   ],
   imports: [
     BrowserModule,
