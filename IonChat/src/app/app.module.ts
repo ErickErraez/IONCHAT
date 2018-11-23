@@ -9,13 +9,10 @@ import { ChatComponent } from './chat/chat.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { FriendsComponent } from './friends/friends.component';
-<<<<<<< HEAD
 import { NavbarComponent } from './login/navbar/navbar.component';
 import { BodyComponent } from './login/body/body.component';
 import { FooterComponent } from './login/footer/footer.component';
-=======
 import { MuroComponent } from './muro/muro.component';
->>>>>>> 242b3568ef8663531fcf8e9a438daf3c26ee8b27
 
 @NgModule({
   declarations: [
@@ -26,13 +23,10 @@ import { MuroComponent } from './muro/muro.component';
     HomeComponent,
     ContactComponent,
     FriendsComponent,
-<<<<<<< HEAD
     NavbarComponent,
     BodyComponent,
-    FooterComponent
-=======
+    FooterComponent,
     MuroComponent
->>>>>>> 242b3568ef8663531fcf8e9a438daf3c26ee8b27
   ],
   imports: [
     BrowserModule,
