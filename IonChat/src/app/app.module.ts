@@ -9,17 +9,18 @@ import { ChatComponent } from './chat/chat.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { FriendsComponent } from './friends/friends.component';
-import { NavbarComponent } from './login/navbar/navbar.component';
-import { BodyComponent } from './login/body/body.component';
-import { FooterComponent } from './login/footer/footer.component';
 import { MuroComponent } from './muro/muro.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'friends', component: FriendsComponent }
+  { path: 'friends', component: FriendsComponent },
+  { path: 'not-found', component: NotFoundComponent },
+  { path: '**', redirectTo: 'not-found' }
 
 ];
 
@@ -32,10 +33,8 @@ const appRoutes: Routes = [
     HomeComponent,
     ContactComponent,
     FriendsComponent,
-    NavbarComponent,
-    BodyComponent,
-    FooterComponent,
-    MuroComponent
+    MuroComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
