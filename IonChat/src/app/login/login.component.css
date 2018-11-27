@@ -1,0 +1,14 @@
+.backgroundHome{
+    background-color: rgb(255, 255, 255);
+  }
+
+.colorBorder {
+    border-top-color:  rgb(156, 195, 231);
+    border-right-color: rgb(156, 195, 231);
+    border-bottom-color:  rgb(156, 195, 231);
+    border-left-color:  rgb(156, 195, 231);
+}
+
+.colorCards{
+    background-color:rgb(159, 201, 235);
+}
