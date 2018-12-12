@@ -14,10 +14,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AmistadComponent } from './friends/amistad/amistad.component';
 import { SolicitudesComponent } from './friends/solicitudes/solicitudes.component';
-import { FotoComponent } from './profile/foto/foto.component';
-import { ImgComponent } from './profile/img/img.component';
-import { ImgperComponent } from './profile/imgper/imgper.component';
-import { PublicacionesComponent } from './profile/publicaciones/publicaciones.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -42,10 +38,6 @@ const appRoutes: Routes = [
     MuroComponent,
     AmistadComponent,
     SolicitudesComponent,
-    FotoComponent,
-    ImgComponent,
-    ImgperComponent,
-    PublicacionesComponent,
     NotFoundComponent
   ],
   imports: [
