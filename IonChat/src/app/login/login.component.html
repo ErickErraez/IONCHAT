@@ -15,7 +15,7 @@
             <input type="password" formControlName="contraseña" class="form-control" placeholder="Contraseña" />
           </div>
           <div class="form-group">
-            <button class="btn btn-primary">Login</button>
+            <button class="btn btn-primary" [routerLink]="['/home']" routerLinkActive="router-link-active" >Login</button>
           </div>
           <div class="text-right">
             <button class="btn btn-link" (click)="estado ='registro'">¿No tienes Cuenta?</button>
@@ -54,8 +54,11 @@
           <input type="date" formControlName="edad" class="form-control" placeholder="edad" />
         </div>
       </div>
+      <div class="text-right">
+        <button class="btn btn-link" (click)="estado ='login'">¿Ya tienes Cuenta?</button>
+      </div>
       <div class="form-group">
-        <button class="btn btn-primary">Registrarse</button>
+        <button class="btn btn-primary" [routerLink]="['/home']">Registrarse</button>
       </div>
       </form>
       </div>

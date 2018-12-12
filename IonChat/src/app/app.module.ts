@@ -16,7 +16,7 @@ import { AmistadComponent } from './friends/amistad/amistad.component';
 import { SolicitudesComponent } from './friends/solicitudes/solicitudes.component';
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: LoginComponent },
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'profile', component: ProfileComponent },
