@@ -25,9 +25,13 @@
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "node_modules/metro4/docs/metro/css/metro-all.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/metro4/docs/metro/js/metro.min.js",
+              "node_modules/metro4/docs/js/jquery-3.3.1.min.js"
+            ]
           },
           "configurations": {
             "production": {
