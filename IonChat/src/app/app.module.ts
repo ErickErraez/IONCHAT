@@ -7,7 +7,6 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ChatComponent } from './chat/chat.component';
 import { HomeComponent } from './home/home.component';
-import { ContactComponent } from './contact/contact.component';
 import { FriendsComponent } from './friends/friends.component';
 import { MuroComponent } from './muro/muro.component';
 import { RouterModule, Routes } from '@angular/router';
@@ -33,7 +32,6 @@ const appRoutes: Routes = [
     ProfileComponent,
     ChatComponent,
     HomeComponent,
-    ContactComponent,
     FriendsComponent,
     MuroComponent,
     AmistadComponent,
