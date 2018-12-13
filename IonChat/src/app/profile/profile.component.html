@@ -12,23 +12,23 @@
   <div class="col-3"></div>
   <div class="col-6">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">Diego</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Biografia </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Informacion</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
-              Dropdown
+              Amigos
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Action</a>
@@ -38,8 +38,8 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
+              <a class="nav-link" href="#">Fotos</a>
+            </li>
         </ul>
       </div>
     </nav>
@@ -47,27 +47,30 @@
 </div>
 <br>
 <br>
+<br>
 <div class="row">
-  <div class="col-1"></div>
-  <div class="col-7">
-    <div class="card">
-      <div class="card-header">
-        <h5 class="card-title"><i class="fas fa-edit"></i>Publicacion</h5>
-      </div>
-      <div class="card-body">
-        <div class="row">
-          <div class="col-12">
-            <form>
-              <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+    <div class="col-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-header"><i class="fas fa-edit"></i>
+                Informacion
               </div>
-              <div class="text-right">
-                <button type="button" class="btn btn-outline-primary">Publicar</button>
-              </div>
-            </form>
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Agregar Datos Personales</h6>
+              <p class="card-text">Agrega datos personales para que las personas sepan más sobre ti.</p>
+            </div>
           </div>
-        </div>
-      </div>
+          <br>
+          <div class="card" style="width: 18rem;">
+              <div class="card-header"><i class="far fa-image"></i>
+                  Fotos
+                </div>
+              <div class="card-body">
+                  <img class="card-img" src="assets/home.jpg"  class="fotoPortada">
+              </div>
+            </div>
+    </div>
+    <div  class="col-6">
+      <app-muro> </app-muro>
     </div>
   </div>
-</div>
