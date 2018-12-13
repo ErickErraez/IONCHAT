@@ -3,12 +3,74 @@
     <div class="divfotoPortada">
       <img src="assets/img/portada.jpeg" class="fotoPortada" />
       <div class="contenedorFotoPortada col-2">
-        
-          <img class="img-fluid img-thumbnail fotoPerfilPortada rounded-circle" src="assets/home.jpg" />
-        
+        <img class="img-fluid img-thumbnail fotoPerfilPortada rounded-circle" src="assets/home.jpg" />
       </div>
     </div>
-
   </div>
-
 </div>
+<div class="row">
+  <div class="col-3"></div>
+  <div class="col-6">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Diego</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Biografia </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Informacion</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Amigos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Fotos</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div class="row">
+
+    <div class="col-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-header"><i class="fas fa-edit"></i>
+                Informacion
+              </div>
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Agregar Datos Personales</h6>
+              <p class="card-text">Agrega datos personales para que las personas sepan más sobre ti.</p>
+            </div>
+          </div>
+          <br>
+          <div class="card" style="width: 18rem;">
+              <div class="card-header"><i class="far fa-image"></i>
+                  Fotos
+                </div>
+              <div class="card-body">
+                  <img class="card-img" src="assets/home.jpg"  class="fotoPortada">
+              </div>
+            </div>
+    </div>
+    <div  class="col-6">
+      <app-muro> </app-muro>
+    </div>
+  </div>

@@ -1,0 +1,5 @@
+.contact-scroll{
+    height: 550px;
+    padding: 0px;
+    overflow-y: auto;
+}

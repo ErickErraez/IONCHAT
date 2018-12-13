@@ -7,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+amigos: any = [];
+prueba: any = {};
+
+  constructor() {
+    for(let index = 0; index < 18; index++){
+      this.prueba.nombre = 'juan' + index;
+      this.amigos.push(this.prueba);
+    }
+   }
 
   ngOnInit() {
   }

@@ -7,6 +7,14 @@
     <app-muro> </app-muro>
   </div>
   <div class="col-3">
-    <app-contact> </app-contact>
+    <br>
+    <div #scrollBox class="contact-scroll" [scrollTop]="scrollBox.scrollHeight">
+      <ul class="list-group" *ngFor="let item of amigos">
+        <li class="list-group-item d-flex justify-content-between aling-items-center">
+          {{item.nombre}}
+          <span class="badge badge-primary badge-pill">1</span>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
