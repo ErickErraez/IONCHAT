@@ -13,7 +13,7 @@ class Photo extends Model
      * @var array
      */
     protected $fillable = [
-        'text',
+        'photo','date','description',
     ];
 
 }

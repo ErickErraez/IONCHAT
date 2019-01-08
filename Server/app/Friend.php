@@ -13,7 +13,7 @@ class Friend extends Model
      * @var array
      */
     protected $fillable = [
-     'date',
+        'date',
     ];
 
 }

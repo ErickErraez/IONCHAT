@@ -13,7 +13,7 @@ class Chat extends Model
      * @var array
      */
     protected $fillable = [
-        'text',
+        'type','content',
     ];
 
 }

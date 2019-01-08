@@ -2,10 +2,13 @@
 
 namespace App;
 
+
 use Illuminate\Database\Eloquent\Model;
 
-class TypeComentary extends Model
+
+class Group extends Model 
 {
+    
 
     /**
      * The attributes that are mass assignable.
@@ -13,7 +16,8 @@ class TypeComentary extends Model
      * @var array
      */
     protected $fillable = [
-        'description',
+        'nameGroup', 'photo','date',
     ];
 
+   
 }

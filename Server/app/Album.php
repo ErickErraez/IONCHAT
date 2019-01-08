@@ -13,7 +13,7 @@ class Album extends Model
      * @var array
      */
     protected $fillable = [
-        'text',
+        'name',
     ];
 
 }
