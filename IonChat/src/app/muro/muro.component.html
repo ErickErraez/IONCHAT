@@ -1,5 +1,5 @@
 <br>
-<div class="muro-scroll" [scrollTop]="scrollBox.scrollHeight">
+<div class="muro-scroll">
   <div class="card">
     <div class="card-header">
       <h5 class="card-title"><i class="fas fa-edit"></i>Publicacion</h5>
@@ -20,66 +20,18 @@
     </div>
   </div>
   <br>
-  <div class="card">
+  <div class="card" *ngFor="let item of content">
     <div class="card-header">
-      <h5 class="card-title"><i class="fas fa-edit"></i>Bryan a compartido una publicacion</h5>
+      <h5 class="card-title"><i class="fas fa-edit"></i>{{item.nombre}}</h5>
     </div>
     <div class="card-body">
       <div class="row">
         <div class="col-12">
-          <h6>Si no es mucho pedir ¿Me dejas que sea el amor de tu vida?</h6>
+          <h6>{{item.contenido}}</h6>
         </div><br>
-        <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-outline-primary"><i class="fas fa-heart"></i>Me gusta</button>
-          <button type="button" class="btn btn-outline-primary"><i class="far fa-comments"></i>Comentar</button>
-          <button type="button" class="btn btn-outline-primary"><i class="fas fa-share"></i>Compartir</button>
-        </div>
+        
       </div>
     </div>
-    <div class="card-footer text-muted">
-      <div class="row">
-        <div class="col-1">
-          <i class="far fa-user-circle fa-2x"></i>
-        </div>
-        <div class="col-11">
-          <div class="form-group">
-            <input class="form-control footbarInput" type="text" placeholder="Escribe un comentario" aria-label="Search">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br>
-  <div class="card">
-    <div class="card-header">
-      <h5 class="card-title"><i class="fas fa-edit"></i>Francisco a compartido una publicacion</h5>
-    </div>
-    <div class="card-body">
-      <div class="row">
-        <div class="col-12">
-          <img class="card-img-top" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fep01.epimg.net%2Felpais%2Fimagenes%2F2017%2F03%2F08%2Fel_aleph%2F1488970880_865812_1488971722_noticia_normal.jpg&f=1"
-            alt="Card image cap">
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-outline-primary"><i class="fas fa-heart"></i>Me gusta</button>
-            <button type="button" class="btn btn-outline-primary"><i class="far fa-comments"></i>Comentar</button>
-            <button type="button" class="btn btn-outline-primary"><i class="fas fa-share"></i>Compartir</button>
-          </div>
-        </div>
-        <br>
 
-      </div>
-    </div>
-    <div class="card-footer text-muted">
-      <div class="row">
-        <div class="col-1">
-          <i class="far fa-user-circle fa-2x"></i>
-        </div>
-        <div class="col-11">
-          <div class="form-group">
-            <input class="form-control footbarInput" type="text" placeholder="Escribe un comentario" aria-label="Search">
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </div>

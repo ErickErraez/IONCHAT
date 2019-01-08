@@ -13,6 +13,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AmistadComponent } from './friends/amistad/amistad.component';
 import { SolicitudesComponent } from './friends/solicitudes/solicitudes.component';
+import { HttpModule } from '@angular/http';
 
 const appRoutes: Routes = [
   { path: '', component: LoginComponent },
@@ -40,6 +41,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     RouterModule.forRoot(appRoutes),
     AppRoutingModule
   ],
