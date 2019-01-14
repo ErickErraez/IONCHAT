@@ -16,5 +16,7 @@ class Interest extends Model
     protected $fillable = [
         'type', 'description','date'
     ];
-
+    function InterestPerson(){
+        return $this->belongsTo('App\Person');
+    }
    }

@@ -26,4 +26,7 @@ class Login extends Model
     protected $hidden = [
         'password',
     ];
+    function enter(){
+        return $this->hasOne('App\Person');
+    }
 }

@@ -18,6 +18,8 @@ class Group extends Model
     protected $fillable = [
         'nameGroup', 'photo','date',
     ];
-
+    function GroupPerson(){
+        return $this->belongsTo('App\Person');
+    }
    
 }
