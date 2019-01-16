@@ -1,0 +1,5 @@
+COMANDO CREAR TABLAS EN LUMEN
+php artisan make:migration create_nombreTablas_table
+
+COMANDO PARA GENERAR LAS TABLAS
+php artisan migrate

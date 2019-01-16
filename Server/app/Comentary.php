@@ -15,5 +15,15 @@ class Comentary extends Model
     protected $fillable = [
         'text', 'date',
     ];
+    public function publication()
+    {
+        return $this->belongsTo('App\Publication');
+
+    }
+    public function person()
+    {
+        return $this->belongsTo('App\Person');
+
+    }
 
 }

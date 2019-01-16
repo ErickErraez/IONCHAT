@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Publication extends Model 
+class State extends Model
 {
 
     /**
@@ -15,5 +15,10 @@ class Publication extends Model
     protected $fillable = [
         'description',
     ];
+    public function friend()
+    {
+        return $this->belongsTo('App\Friend');
+
+    }
 
 }

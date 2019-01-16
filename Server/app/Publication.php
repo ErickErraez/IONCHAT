@@ -16,4 +16,17 @@ class Publication extends Model
         'content', 'date',
     ];
 
+    public function comentary()
+    {
+        return $this->hasMany('App\Comentary');
+    }
+    public function typeComentary()
+    {
+        return $this->hasMany('App\TypeComentary');
+    }
+    public function person()
+    {
+        return $this->belongsTo('App\Person');
+
+    }
 }

@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Friend extends Model 
+class Friend extends Model
 {
 
     /**
@@ -16,4 +16,9 @@ class Friend extends Model
         'date',
     ];
 
+    public function person()
+    {
+        return $this->belongsTo('App\Person');
+
+    }
 }
