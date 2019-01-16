@@ -27,6 +27,6 @@ class Login extends Model
         'password',
     ];
     function enter(){
-        return $this->hasOne('App\Person');
+        return $this->belongsTo ('App\Person');
     }
 }
