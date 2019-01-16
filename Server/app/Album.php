@@ -15,8 +15,11 @@ class Album extends Model
     protected $fillable = [
         'name',
     ];
-    function AlbumPerson(){
+    function person(){
         return $this->belongsTo('App\Person');
     }
+    function photo(){
+        return  $this->hasMany('App\Album');
+       }
 
 }

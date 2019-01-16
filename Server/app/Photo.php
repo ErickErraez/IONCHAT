@@ -13,13 +13,13 @@ class Photo extends Model
      * @var array
      */
     protected $fillable = [
-        'photo','date','description',
+        'name','type','attached','date','description',
     ];
-    function PhotoPerson(){
+    function Person(){
         return $this->belongsTo('App\Person');
     }
 
-    function AlbumPhoto(){
+    function Album(){
         return $this->belongsTo('App\Photo');
     }
 

@@ -16,7 +16,7 @@ class TypePublication extends Model
         'description',
     ];
 
-    function TypePublica(){
+    function publica(){
         return $this->belongsTo('App\Publication');
     }
 
