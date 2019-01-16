@@ -16,4 +16,8 @@ class TypeComentary extends Model
         'description',
     ];
 
+    function TypePublica(){
+        return $this->belongsTo('App\Publication');
+    }
+
 }

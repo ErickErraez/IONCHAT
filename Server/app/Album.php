@@ -15,5 +15,8 @@ class Album extends Model
     protected $fillable = [
         'name',
     ];
+    function AlbumPerson(){
+        return $this->belongsTo('App\Person');
+    }
 
 }
