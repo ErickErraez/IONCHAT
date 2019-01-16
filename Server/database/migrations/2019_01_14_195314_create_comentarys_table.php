@@ -17,7 +17,12 @@ class CreateComentarysTable extends Migration
           $table->increments('id');
           $table->timestamps();
           $table->string('text',255);
-          $table->string('date',255);
+          $table->dateTime('date');
+          $table->unsignedInteger('idPerson');
+          $table->foreign('idPerson')->references('id')->on('persons')->onDelete('cascade');
+          $table->unsignedInteger('idPublication');
+          $table->foreign('idPublication')->references('id')->on('publications')->onDelete('cascade');
+
        });
     }
 

@@ -21,4 +21,15 @@ class Friend extends Model
         return $this->belongsTo('App\Person');
 
     }
+    public function friend()
+    {
+        return $this->belongsTo('App\Person');
+
+    }
+
+    public function state()
+    {
+        return $this->hasMany('App\Person');
+
+    }
 }

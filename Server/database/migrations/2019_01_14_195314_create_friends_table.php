@@ -8,7 +8,7 @@ class CreateFriendsTable extends Migration
 {
     /**
      * Run the migrations.
-     *
+     *d
      * @return void
      */
     public function up()
@@ -16,7 +16,13 @@ class CreateFriendsTable extends Migration
        Schema::create('friends', function (Blueprint $table) {
           $table->increments('id');
           $table->timestamps();
-          $table->string('date',255);
+          $table->dateTime('date');
+          $table->unsignedInteger('idPerson');
+          $table->foreign('idPerson')->references('id')->on('persons')->onDelete('cascade');
+          $table->unsignedInteger('idPersonFriend');
+          $table->foreign('idPersonFriend')->references('id')->on('persons')->onDelete('cascade');
+          $table->unsignedInteger('idState');
+          $table->foreign('idState')->references('id')->on('states')->onDelete('cascade');
        });
     }
 

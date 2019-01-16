@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class TypeComentary extends Model
+class TypePublication extends Model
 {
 
     /**

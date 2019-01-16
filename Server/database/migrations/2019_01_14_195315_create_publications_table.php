@@ -17,7 +17,11 @@ class CreatePublicationsTable extends Migration
           $table->increments('id');
           $table->timestamps();
           $table->string('content',255);
-          $table->string('date',255);
+          $table->dateTime('date');
+          $table->unsignedInteger('idPerson');
+          $table->foreign('idPerson')->references('id')->on('persons')->onDelete('cascade');
+          $table->unsignedInteger('idTypePublication');
+          $table->foreign('idTypePublication')->references('id')->on('typecomentarys')->onDelete('cascade');
        });
     }
 
