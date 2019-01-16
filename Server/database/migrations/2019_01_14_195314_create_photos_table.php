@@ -16,9 +16,16 @@ class CreatePhotosTable extends Migration
        Schema::create('photos', function (Blueprint $table) {
           $table->increments('id');
           $table->timestamps();
-          $table->string('photo',255);
-          $table->string('date',255);
-          $table->string('description',255);
+          $table->string('name',255);
+          $table->string('type',255);
+          $table->text('attached');
+          $table->date('date');
+          $table->text('description');
+          $table->unsignedInteger('idPerson');
+          $table->foreign('idPerson')->references('id')->on('persons')->onDelete('cascade');
+          $table->unsignedInteger('idPhoto');
+          $table->foreign('idPhoto')->references('id')->on('photo')->onDelete('cascade');
+
        });
     }
 

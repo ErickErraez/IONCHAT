@@ -12,11 +12,14 @@ class CreateAlbumsTable extends Migration
      * @return void
      */
     public function up()
+
     {
        Schema::create('albums', function (Blueprint $table) {
           $table->increments('id');
           $table->timestamps();
-          $table->string('name',255);
+          $table->string('name',50);
+          $table->unsignedInteger('idPerson');
+          $table->foreign('idPerson')->references('id')->on('persons')->onDelete('cascade');
        });
     }
 

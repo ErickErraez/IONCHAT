@@ -16,7 +16,9 @@ class CreateTypeComentarysTable extends Migration
        Schema::create('typecomentarys', function (Blueprint $table) {
           $table->increments('id');
           $table->timestamps();
-          $table->string('description',255);
+          $table->text('description');
+          $table->unsignedInteger('idPublications');
+          $table->foreign('idPublications')->references('id')->on('publications')->onDelete('cascade');
        });
     }
 

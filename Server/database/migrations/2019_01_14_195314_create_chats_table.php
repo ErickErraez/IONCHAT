@@ -17,7 +17,9 @@ class CreateChatsTable extends Migration
           $table->increments('id');
           $table->timestamps();
           $table->string('type',255);
-          $table->string('content',255);
+          $table->text('content');
+          $table->unsignedInteger('idPerson');
+          $table->foreign('idPerson')->references('id')->on('persons')->onDelete('cascade');
        });
     }
 

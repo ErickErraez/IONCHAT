@@ -15,7 +15,7 @@ class Chat extends Model
     protected $fillable = [
         'type','content',
     ];
-    function ChatPerson(){
+    function person(){
         return $this->belongsTo('App\Person');
     }
 
