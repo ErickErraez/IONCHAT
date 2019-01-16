@@ -16,8 +16,10 @@ class CreateLoginsTable extends Migration
        Schema::create('logins', function (Blueprint $table) {
           $table->increments('id');
           $table->timestamps();
-          $table->string('email',255);
-          $table->string('password',255);
+          $table->string('email',80);
+          $table->string('password',25);
+          $table->unsignedInteger('idPerson');
+          $table->foreign('idPerson')->references('id')->on('persons')->onDelete('cascade');  
        });
     }
 

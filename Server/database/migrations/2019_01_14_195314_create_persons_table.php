@@ -16,10 +16,11 @@ class CreatePersonsTable extends Migration
        Schema::create('persons', function (Blueprint $table) {
           $table->increments('id');
           $table->timestamps();
-          $table->string('name',255);
-          $table->string('surname',255);
-          $table->string('gender',255);
-          $table->string('birthdate',255);
+          $table->string('name',50);
+          $table->string('surname',50);
+          $table->boolean('gender',255);
+          $table->date('birthdate');
+        
        });
     }
 

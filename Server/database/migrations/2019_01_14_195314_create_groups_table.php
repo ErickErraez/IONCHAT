@@ -16,9 +16,11 @@ class CreateGroupsTable extends Migration
        Schema::create('groups', function (Blueprint $table) {
           $table->increments('id');
           $table->timestamps();
-          $table->string('nameGroup',255);
+          $table->string('nameGroup',20);
           $table->string('photo',255);
-          $table->string('date',255);
+          $table->date('date');
+          $table->unsignedInteger('idPerson');
+          $table->foreign('idPerson')->references('id')->on('persons')->onDelete('cascade');
        });
     }
 

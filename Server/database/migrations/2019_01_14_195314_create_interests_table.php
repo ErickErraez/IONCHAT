@@ -16,9 +16,11 @@ class CreateInterestsTable extends Migration
        Schema::create('interests', function (Blueprint $table) {
           $table->increments('id');
           $table->timestamps();
-          $table->string('type',255);
-          $table->string('description',255);
-          $table->string('date',255);
+          $table->string('type',20);
+          $table->string('description',155);
+          $table->date('date');
+          $table->unsignedInteger('idPerson');
+          $table->foreign('idPerson')->references('id')->on('persons')->onDelete('cascade');
        });
     }
 
